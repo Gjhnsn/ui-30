@@ -10,7 +10,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <div className="App">
+        <div>
           <nav>
             <h1>UI 30</h1>
           </nav>
