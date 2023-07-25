@@ -6,7 +6,9 @@ export const GlobalStyle = createGlobalStyle`
         background-color: ${(props) => props.theme.body};
     }
 
-    
+    p {
+        color: ${props => props.theme.secondary};
+    }
 
 `
 
