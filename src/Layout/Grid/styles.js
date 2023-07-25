@@ -1,4 +1,17 @@
+import { Link } from "react-router-dom";
 import { styled } from "styled-components";
+
+export const Nav = styled.nav`
+  display: flex;
+  width: 100vw;
+`
+
+export const NavTitle = styled(Link)`
+  font-size: 60px;
+  margin: 30px auto 30px auto;
+  color: #EFEEE8;
+  text-decoration: none;
+`
 
 export const Grid = styled.section`
   max-width: 1500px;
@@ -11,12 +24,13 @@ export const Grid = styled.section`
 
   @media (max-width: 1350px) {
     grid-template-columns: repeat(2, minmax(350px, 1fr));
-    /* max-width: 1000px; */
+    grid-template-rows: repeat(15, 450px);
     padding: 0 50px;
   }
 
   @media (max-width: 870px) {
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(30, 450px);
     padding: 0 50px;
   }
 `;

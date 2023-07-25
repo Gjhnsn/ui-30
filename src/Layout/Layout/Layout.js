@@ -1,9 +1,9 @@
 import React from 'react'
-import { Grid } from './styles'
+import { LayoutWrapper } from './styles'
 
 const Layout = (props) => {
   return (
-    <Grid>{props.children}</Grid>
+    <LayoutWrapper>{props.children}</LayoutWrapper>
   )
 }
 

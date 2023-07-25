@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { LayoutWrapper } from "../../Layout/Layout/styles";
 
 const Day1 = () => {
   return (
-    <div>Day 1</div>
-  )
-}
+    <LayoutWrapper>
+      <p>Day 1</p>
+    </LayoutWrapper>
+  );
+};
 
-export default Day1
+export default Day1;
