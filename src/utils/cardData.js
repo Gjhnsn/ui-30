@@ -1,7 +1,10 @@
+import placeholder from '../assets/ui-placeholder.svg'
+
 export const cardData = [
     {
         id: 0,
-        path: 'day-1'
+        path: 'day-1',
+        image: `${placeholder}`
     },
     {
         id: 1,
