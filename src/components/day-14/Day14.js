@@ -1,9 +1,9 @@
 import React from 'react'
-import { LayoutWrapper } from '../../Layout/Layout/styles'
+import Layout from '../../Layout/Layout/Layout'
 
 const Day14 = () => {
   return (
-    <LayoutWrapper>Day14</LayoutWrapper>
+    <Layout>Day14</Layout>
   )
 }
 

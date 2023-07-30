@@ -1,11 +1,11 @@
 import React from "react";
-import { LayoutWrapper } from "../../Layout/Layout/styles";
+import Layout from "../../Layout/Layout/Layout";
 
 const Day1 = () => {
   return (
-    <LayoutWrapper>
+    <Layout>
       <p>Day 1</p>
-    </LayoutWrapper>
+    </Layout>
   );
 };
 
