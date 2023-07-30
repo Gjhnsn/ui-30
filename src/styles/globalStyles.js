@@ -8,6 +8,10 @@ export const GlobalStyle = createGlobalStyle`
 
     }
 
+    h2 {
+        font-family: 'Notable', sans-serif;
+    }
+
     p {
         color: ${props => props.theme.secondary};
     }

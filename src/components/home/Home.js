@@ -1,19 +1,25 @@
 import React from "react";
 import { cardData } from "../../utils/cardData";
 import Card from "../../Layout/Card/Card";
-import { Link } from "react-router-dom";
 import GridLayout from "../../Layout/Grid/Grid";
+import { CardTitle, HoverDiv, InnerCard, StyledLink } from "./styles";
 
 const Home = () => {
 
   const projectCards = cardData.map((card) => {
     console.log(card);
     return (
-       <Link to={`/${card.path}`}>
+       <StyledLink to={`/${card.path}`}>
         <Card key={card.id}>
-          <h2>{card.path}</h2>
+          <CardTitle>{card.id + 1}</CardTitle>
+          <InnerCard image={card.image}>
+            <img src={card.image} />
+          </InnerCard>
+          <HoverDiv>
+            <p>{card.path}</p>
+          </HoverDiv>
         </Card>
-      </Link>
+      </StyledLink>
     );
   });
 
