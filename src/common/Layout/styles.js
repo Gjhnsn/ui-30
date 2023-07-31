@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const LayoutWrapper = styled.div`
     max-width: 1500px;
@@ -10,20 +11,17 @@ export const LayoutWrapper = styled.div`
     align-items: center;
 `
 
-export const BackButton = styled.button`
-    padding: 15px;
-    background-color: transparent;
-    border: 1px solid ${props => props.theme.secondary};
-    border-radius: 5px;
-    color: ${props => props.theme.secondary};
-    font-size: 2rem;
-    line-height: 0;
-    position: absolute;
-    margin-left: 5%;
-    display: inline-block;
+// ----------- Nav Styles
 
-    &:hover {
-        background-color: rgba(239, 238, 232, .1);
-        transition: .2s ease all;
-    }
+export const Nav = styled.nav`
+  display: flex;
+  align-items: center;
+  width: 100vw;
+`
+
+export const NavTitle = styled(Link)`
+  font-size: 60px;
+  margin: 30px auto 30px auto;
+  color: #EFEEE8;
+  text-decoration: none;
 `

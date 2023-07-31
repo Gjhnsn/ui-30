@@ -1,18 +1,4 @@
-import { Link } from "react-router-dom";
 import { styled } from "styled-components";
-
-export const Nav = styled.nav`
-  display: flex;
-  align-items: center;
-  width: 100vw;
-`
-
-export const NavTitle = styled(Link)`
-  font-size: 60px;
-  margin: 30px auto 30px auto;
-  color: #EFEEE8;
-  text-decoration: none;
-`
 
 export const Grid = styled.section`
   max-width: 1500px;

@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 import Day1 from "./components/day-1/Day1";
 import Home from "./components/home/Home";
-import { Nav, NavTitle } from "./common/Grid/styles";
+import { Nav, NavTitle } from "./common/Layout/styles";
 import Day2 from "./components/day-2/Day2";
 import Day3 from "./components/day-3/Day3";
 import Day4 from "./components/day-4/Day4";
@@ -41,7 +41,7 @@ import Day28 from "./components/day-28/Day28";
 import Day29 from "./components/day-29/Day29";
 import Day30 from "./components/day-30/Day30";
 import { TiArrowBackOutline } from 'react-icons/ti'
-import { BackButton } from "./common/Layout/styles";
+import BackButton from "./common/BackButton";
 
 function App() {
 
@@ -63,9 +63,7 @@ function App() {
       <>
         <Nav>
           { backButtonIsActive &&
-          <BackButton onClick={goBack}>
-            <TiArrowBackOutline />
-          </BackButton>
+          <BackButton></BackButton>
           }
           <NavTitle to="/">
             <h1>UI 30</h1>
