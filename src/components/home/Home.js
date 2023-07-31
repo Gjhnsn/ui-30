@@ -1,7 +1,7 @@
 import React from "react";
 import { cardData } from "../../utils/cardData";
-import Card from "../../Layout/Card/Card";
-import GridLayout from "../../Layout/Grid/Grid";
+import Card from "../../common/Card/Card";
+import GridLayout from "../../common/Grid/Grid";
 import { CardTitle, HoverDiv, InnerCard, StyledLink } from "./styles";
 
 const Home = () => {

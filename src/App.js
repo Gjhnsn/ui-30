@@ -5,10 +5,12 @@ import { theme } from "./styles/globalStyles";
 import {
   Routes,
   Route,
+  useLocation,
+  useNavigate
 } from "react-router-dom";
 import Day1 from "./components/day-1/Day1";
 import Home from "./components/home/Home";
-import { Nav, NavTitle } from "./Layout/Grid/styles";
+import { Nav, NavTitle } from "./common/Grid/styles";
 import Day2 from "./components/day-2/Day2";
 import Day3 from "./components/day-3/Day3";
 import Day4 from "./components/day-4/Day4";
@@ -38,14 +40,33 @@ import Day27 from "./components/day-27/Day27";
 import Day28 from "./components/day-28/Day28";
 import Day29 from "./components/day-29/Day29";
 import Day30 from "./components/day-30/Day30";
+import { TiArrowBackOutline } from 'react-icons/ti'
+import { BackButton } from "./common/Layout/styles";
 
 function App() {
+
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  }
+
+  let location = useLocation();
+  let backButtonIsActive = false;
+
+  if (location.pathname !== '/') {
+    backButtonIsActive = true;
+  }
 
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <>
         <Nav>
+          { backButtonIsActive &&
+          <BackButton onClick={goBack}>
+            <TiArrowBackOutline />
+          </BackButton>
+          }
           <NavTitle to="/">
             <h1>UI 30</h1>
           </NavTitle>
