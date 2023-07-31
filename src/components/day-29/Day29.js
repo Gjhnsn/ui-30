@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../Layout/Layout/Layout'
+import Layout from '../../common/Layout/Layout'
 
 const Day29 = () => {
   return (

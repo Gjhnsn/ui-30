@@ -3,7 +3,9 @@ import { LayoutWrapper } from './styles'
 
 const Layout = (props) => {
   return (
-    <LayoutWrapper>{props.children}</LayoutWrapper>
+    <LayoutWrapper>
+      {props.children}
+    </LayoutWrapper>
   )
 }
 
