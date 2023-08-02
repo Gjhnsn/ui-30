@@ -9,7 +9,7 @@ const Home = () => {
   const projectCards = cardData.map((card) => {
     console.log(card);
     return (
-       <StyledLink to={`/${card.path}`}>
+       <StyledLink key={card.id} to={`/${card.path}`}>
         <Card key={card.id}>
           <CardTitle>{card.id + 1}</CardTitle>
           <InnerCard image={card.image}>

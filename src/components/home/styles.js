@@ -47,9 +47,8 @@ export const HoverDiv = styled.div`
     transition: all ease .5s;
 
     ${StyledLink}:hover & {
-        height: 25%;
         transform: translateY(0%);
-
+        color: blue;
     }
 `
 

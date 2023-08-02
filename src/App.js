@@ -70,7 +70,7 @@ function App() {
           </NavTitle>
         </Nav>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} exact />
           <Route path="/day-1" element={<Day1 />} />
           <Route path="/day-2" element={<Day2 />} />
           <Route path="/day-3" element={<Day3 />} />
